@@ -1,2 +1,2 @@
-# jc-programming-knowledge
+# programming-knowledge
 Programming knowledge for JC
