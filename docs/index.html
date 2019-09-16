@@ -6,15 +6,20 @@
     <title>Document</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+    <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
 </head>
 
 <body>
     <div id="app"></div>
     <script>
         window.$docsify = {
-            loadSidebar: true
+            loadSidebar: true,
+            plugins: [
+                EditOnGithubPlugin.create('https://github.com/JerryC8080/programming-knowledge/tree/master/docs/')
+            ]
         }
     </script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
