@@ -1,0 +1,23 @@
+{
+  "name": "programming-knowledge",
+  "version": "1.0.0",
+  "description": "Programming knowledge for JC",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "publish": "git add . && git commit -m 'update doc auto' && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JerryC8080/programming-knowledge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JerryC8080/programming-knowledge/issues"
+  },
+  "homepage": "https://github.com/JerryC8080/programming-knowledge#readme"
+}
