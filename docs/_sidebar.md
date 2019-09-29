@@ -3,6 +3,7 @@
     - [复杂度](data-structure-&-algorithm/complexity.md)
     - [递归](data-structure-&-algorithm/recursive.md)
     - [数据结构](data-structure-&-algorithm/data-structure.md)
+    - [排序算法](data-structure-&-algorithm/sorting.md)
 
 - 第二篇：网络协议
 
