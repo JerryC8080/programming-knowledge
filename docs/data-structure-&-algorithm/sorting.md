@@ -6,8 +6,8 @@
 ![](https://raw.githubusercontent.com/JerryC8080/figure-bed/master/img/20191012084032.jpg)
 
 基本的特性分析：
-1. 是否原地排序
-2. 是否稳定
+1. 原地排序
+2. 稳定排序
 3. 时间复杂度：最好、最坏、平均
 4. 空间复杂度
 
