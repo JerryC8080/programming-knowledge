@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/JerryC8080/programming-knowledge/issues"
   },
-  "homepage": "https://github.com/JerryC8080/programming-knowledge#readme"
+  "homepage": "https://github.com/JerryC8080/programming-knowledge#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
 }

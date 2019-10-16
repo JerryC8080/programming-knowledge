@@ -6,11 +6,10 @@
  * 3. 继续从已排序分区末尾开始，寻找最小的数，直到未排序分区遍历完。
  */
 
-const { unsort } = require('./test-case');
-
 function select(testCase) {
-    if (!testCase || testCase.length <= 1) return testCase;
     let step = 0;
+
+    if (!testCase || testCase.length <= 1) return [testCase, step];
 
     for (let sortedFailP = 0; sortedFailP < testCase.length; sortedFailP++) {
         let min = sortedFailP;
@@ -31,5 +30,4 @@ function select(testCase) {
     return [testCase, step];
 }
 
-console.log(unsort);
-console.log(unsort.map(testCase => select(testCase)));
+module.exports = select;
