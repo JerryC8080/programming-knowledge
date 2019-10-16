@@ -53,3 +53,8 @@ function optimizeBubble(testCase) {
 console.log(unsort);
 console.log(unsort.map(testCase => bubble(testCase)));
 console.log(unsort.map(testCase => optimizeBubble(testCase)));
+
+module.exports = {
+    bubble,
+    optimizeBubble,
+}
