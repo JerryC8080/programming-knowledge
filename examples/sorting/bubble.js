@@ -12,23 +12,44 @@ const { unsort } = require('./test-case');
 
 function bubble(testCase) {
     if (!testCase || testCase.length <= 1) return testCase;
-
+    let step = 0;
 
     for (let end = testCase.length - 1; end > 0; end--) {
         for (let i = 0; i <= end; i++) {
             step++;
-            if (testCase [i] > testCase [i + 1]) {
-                const temp = testCase [i+1];
-                testCase [i + 1] = testCase [i];
-                testCase [i] = temp;
+            if (testCase[i] > testCase[i + 1]) {
+                const temp = testCase[i + 1];
+                testCase[i + 1] = testCase[i];
+                testCase[i] = temp;
             }
         }
     }
 
-    return testCase;
+    return [ testCase, step ];
 }
 
-const sorted = unsort.map(testCase => bubble(testCase));
+// 当一次冒泡时，无数据交换的时候，则意味着后续的数据有序了，停止整个遍历；
+function optimizeBubble(testCase) {
+    if (!testCase || testCase.length <= 1) return testCase;
+
+    let step = 0;
+    let hasSwap = true;
+    for (let end = testCase.length - 1; end > 0 && hasSwap; end--) {
+        hasSwap = false;
+        for (let i = 0; i <= end; i++) {
+            step++;
+            if (testCase[i] > testCase[i + 1]) {
+                const temp = testCase[i + 1];
+                testCase[i + 1] = testCase[i];
+                testCase[i] = temp;
+                hasSwap = true;
+            }
+        }
+    }
+
+    return [ testCase, step ];
+}
 
 console.log(unsort);
-console.log(sorted);
+console.log(unsort.map(testCase => bubble(testCase)));
+console.log(unsort.map(testCase => optimizeBubble(testCase)));
