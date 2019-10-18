@@ -2,6 +2,7 @@ const _ = require('lodash');
 const { unsort } = require('./test-case');
 const { bubble, optimizeBubble } = require('./bubble');
 const select = require('./select');
+const insert = require('./insert');
 
 function run(sortFun){
     const title = `----- ${sortFun.name} sorting -----`;
@@ -16,6 +17,7 @@ function run(sortFun){
     console.log();
 }
 
-run(bubble);
-run(optimizeBubble);
-run(select);
+// run(bubble);
+// run(optimizeBubble);
+// run(select);
+run(insert);
