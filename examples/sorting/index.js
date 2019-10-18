@@ -17,7 +17,7 @@ function run(sortFun){
     console.log();
 }
 
-// run(bubble);
-// run(optimizeBubble);
-// run(select);
+run(bubble);
+run(optimizeBubble);
+run(select);
 run(insert);
