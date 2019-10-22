@@ -4,6 +4,7 @@
     - [递归](data-structure-&-algorithm/recursive.md)
     - [数据结构](data-structure-&-algorithm/data-structure.md)
     - [排序算法](data-structure-&-algorithm/sorting.md)
+    - [二分查找](data-structure-%-algorithm/binary-search.md)
 
 - 第二篇：网络协议
 
