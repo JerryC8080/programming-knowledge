@@ -91,3 +91,32 @@
 ### 课后作业
 1. 实现队列，两种方式
 2. 循环队列的实现，注意判空和判满
+
+## 跳表
+
+简介：为有序单链表，以 n 个为间隔，建立多层索引链表，来提高查找的效率。是用空间换取时间的做法。
+
+特性
+1. 时间复杂度：O(logn)
+2. 空间复杂度：O(n)
+
+操作
+1. 查找
+2. 插入
+3. 删除
+
+![](https://raw.githubusercontent.com/JerryC8080/figure-bed/master/img/20191023213004.jpg)
+
+以上是建立了三层索引链表。
+
+![](https://raw.githubusercontent.com/JerryC8080/figure-bed/master/img/20191023213003.jpg)
+
+查找的过程中，大幅度减少遍历次数。
+
+![](https://raw.githubusercontent.com/JerryC8080/figure-bed/master/img/20191023213005.jpg)
+
+删除的时候，要注意更新索引链表，可以定制具体的策略来达到优化。
+
+## 课后作业
+1. 时间复杂度的计算
+2. 空间复杂度的计算
