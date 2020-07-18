@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/JerryC8080/programming-knowledge#readme",
   "dependencies": {
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.19"
   }
 }
